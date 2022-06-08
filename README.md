@@ -18,7 +18,7 @@ Then:
 
 2. Build the binary:
   ```bash
-  $ xk6 build --with github.com/AckeeDevOps/xk6-google-iap
+  $ xk6 build --with github.com/AckeeCZ/xk6-google-iap
   ```
 
 ## Example:
@@ -57,3 +57,12 @@ Run with
 ./k6 -e SA_KEY="SERVICE_ACCOUNT_KEY" -e CLIENT_ID="OAUTH_CLIENT_ID" -e TARGET_URL="YOUR_WEBSITE_URL" script.js
 ```
 
+### Typescript
+
+If you are using Typescript in your K6 tests, you can use this module for type hints:
+
+```typescript
+declare module "k6/x/googleIap" {
+    function getToken(clientId: string, serviceAccountKey: string): string
+}
+```
