@@ -1,4 +1,4 @@
-module github.com/AckeeDevOps/xk6-google-iap
+module github.com/AckeeCZ/xk6-google-iap
 
 go 1.18
 
